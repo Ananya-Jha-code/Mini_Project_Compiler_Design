@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Optimization</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Code Optimization</h1>
+    <script src="main.js"></script>
+    <form>
+      <label for="inputFile">Choose an input file:</label>
+      <input type="file" id="inputFile">
+      <br>
+      <button type="button" onclick="runOptimization()">Run Optimization</button>
+    </form>
+    <br>
+    <h2>Output:</h2>
+    <pre id="output"></pre>
+    <script>
+      function runOptimization() {
+        const inputFile = document.getElementById("inputFile").files[0];
+        const reader = new FileReader();
+        reader.onload = function(event) {
+          const inputText = event.target.result;
+          // Run the optimization code here
+          // and output the results to the "output" element
+          // Example:
+          const outputTxt = fetch('output.txt')
+          .then(response => response.text())
+          .then(text => document.getElementById('output').textContent = text);
+
+          const outputText = inputText.toUpperCase();
+          document.getElementById("output").textContent = outputText;
+        };
+        reader.readAsText(inputFile);
+      }
+    </script>
+  </body>
+</html>
