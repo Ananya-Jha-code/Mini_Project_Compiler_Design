@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax Analyzer</title>
+    <script src="/functions.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  
+    <h1> Syntax Analyzer </h1>
+
+    <div class="column">
+
+        <div class="row">
+          <h2>Write your code here....</h2>
+          <textarea id="code"></textarea>
+        </div>
+
+        <div class="row">
+          <h2>Output</h2>
+          <textarea id="output"></textarea>
+        </div>
+
+    </div>
+    
+    <div id="Convert_button">
+      <button id="convertButton" onclick="Convert_button()">
+        Analyze Syntax
+      </button>
+      
+      <button class="generateTokens" onclick="GenerateTokens()">
+        Generate Tokens
+      </button>
+    </div>
+
+  </body>
+</html>
