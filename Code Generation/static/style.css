@@ -1,0 +1,86 @@
+/* Style for the body of the page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    item-align:center;
+
+}
+
+/* Style for the header of the page */
+h1 {
+    color: #333;
+    text-align: center;
+}
+textarea{
+width: 589px;
+    height: 225px;
+    margin-top: 10px;
+}
+/* Style for the form */
+form {
+    position: absolute;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    animation: slideIn 0.5s forwards;
+    margin-top: 100px;
+  margin-left: 330px;
+}
+
+/* Style for the input field */
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the submit button */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    animation: fadeIn 0.5s forwards;
+    margin-top: 10px ;
+}
+
+/* Style for the output container */
+#output {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    animation: slideIn 0.5s forwards;
+}
+
+/* Animation for form and submit button */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Animation for submit button */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
